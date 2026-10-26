@@ -1,0 +1,105 @@
+/* --- Global Dashboard Responsive Fixes --- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Dashboard Container & Main Wrapper */
+.dashboard-container, 
+.main-dashboard, 
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Navbar & Header Responsive */
+nav, .navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+nav ul, .navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+/* Cards & Grid Layouts Responsive */
+.card-container, 
+.grid-container, 
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+/* Tables Responsive */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-responsive, 
+table-container {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* --- Media Queries for Mobile Devices --- */
+@media screen and (max-width: 768px) {
+  /* Navigation adjustments for mobile */
+  nav ul, .navbar ul {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    display: none; /* Apni chaile mobile menu toggle js diye control korte paren */
+  }
+
+  /* Padding & Margins adjustment */
+  body {
+    font-size: 14px;
+  }
+
+  .dashboard-container, 
+  .main-dashboard {
+    padding: 0 10px;
+  }
+
+  /* Headers and Text scaling */
+  h1 {
+    font-size: 24px !important;
+  }
+  
+  h2 {
+    font-size: 20px !important;
+  }
+
+  /* Stack grid items on small screens */
+  .grid-container, 
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Extra small devices (phones) */
+  .card, 
+  .dashboard-card {
+    padding: 10px;
+  }
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main-Dashboard UI</title>
+    <link rel="stylesheet" href="./web.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+
+        }
+        .dashboard-container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+
+        }
+        .dashboard-header {
+            background-color: #04274d;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+
+        }
+        .dashboard-nav {
+            background-color: #a52a05;
+
+        }
+        .dashboard-nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+
+        }
+        .dashboard-nav li {
+            margin: 0 1rem;
+        }
+        .dashboard-nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            display: block;
+        }
+        .dashboard-nav a:hover {
+            background-color: #0d7dee;
+            border-radius: 4px;
+        }
+        .dashboard-main {
+            flex-grow: 1;
+            padding: 1rem;
+            width: 100%;
+            height: 100%;
+
+        }
+        .dashboard-section {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .dashboard-section h2 {
+            margin-top: 0;
+        }
+        .dashboard-footer {
+            background-color: #000000;
+            color: rgb(255, 244, 196);
+            text-align: center;
+            /* padding: 1rem; */
+            padding: 10px 20px;
+        }
+        .dashboard-footer a {
+            color: #ff2407;
+            text-decoration: none;
+        }
+
+        .dashboard-footer a:hover {
+            text-decoration: underline;
+        }
+.notice-container {
+  display: flex;
+  /* align-items: center; */
+  background-color: #e7f709;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+  width:2500px;
+  max-width: 1650px;
+  margin: 10px auto;
+  box-shadow: 0 2px 5px rgba(224, 6, 6, 0.05);
+}
+
+.notice-title {
+  background-color: #0f025e;
+  padding: 10px 15px;
+  font-weight: bold;
+  color: #01ff0d;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  font-size: 15px;
+  border-right: 1px solid #15ff00;
+}
+
+.marquee-wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.marquee-text {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 30s linear infinite;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #000000;
+  font-weight: 500;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+
+        
+    </style>
+    
+
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <h1>Soft - Tech IT</h1>
+            <p>The Biggest IT Company in the World</p>
+        </header>
+        <nav class="dashboard-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Login & Registration</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+       <div class="notice-container">
+  <div class="notice-title">
+    <span class="notice-icon">📢</span>
+    <span class="notice-text">নোটিশ</span>
+  </div>
+  <div class="marquee-wrapper">
+    <p class="marquee-text">আসসালামু আলাইকুম ! আমি মো. রাইয়ান সিকদার...!! একজন ফুল স্ট্যাক সফটওয়্যার ডেভেলপার এবং সাইবার সিকিউরিটি স্পেশালিস্ট। 💻🔒 আমাদের 'সফটটেক আইটি' (Softtech IT)-র মাধ্যমে ই-কমার্স ওয়েবসাইট, প্রাতিষ্ঠানিক ওয়েবসাইট, ব্লগ ওয়েবসাইট সহ যেকোনো ক্যাটাগরির ওয়েবসাইট তৈরি করে নিতে পারবেন 🌐🛒</p>
+  </div>
+</div>
+        <main class="dashboard-main">
+            <section class="dashboard-section">
+                <h2>Welcome to the Dashboard</h2>
+                <p>This is the main dashboard where you can manage your activities.</p>
+            </section>
+        </main>
+        <footer class="dashboard-footer">
+            <p>&copy; 2026 Soft - Tech IT. All rights reserved.</p>
+            <p>Developed by <a class="Tech" href="https://www.facebook.com/raiyan.sikder.82875">👉 MD.Raiyan Sikder 👈
+
+            </a></p>
+            <p>Software Engineer & Developer at <a class="Tech" href="https://www.softtechit.com">👉 Soft - Tech IT 👈</a></p>
+            <p>☎️ Whatsapp : 👉 +8801704647681 👈</p>
+        </footer>
+    </div>
+</body>
+</html>
